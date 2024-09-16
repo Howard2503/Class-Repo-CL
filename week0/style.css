@@ -1,0 +1,10 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #ffcdf8;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
