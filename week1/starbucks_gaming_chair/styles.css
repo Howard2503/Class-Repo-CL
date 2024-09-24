@@ -1,0 +1,99 @@
+/* Basic styles for the body, setting the font, margins, and background color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f8f6; /* Light coffee color background */
+    color: #1e3932; /* Starbucks dark green for text */
+}
+
+/* Styling the header section with the main title and logo */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #00704a; /* Starbucks signature green */
+    color: #ffffff;
+    position: relative;
+}
+
+/* Styling for the Starbucks logo in the header */
+.logo {
+    height: 80px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+/* Container for the main content aligning picture and text side by side */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Picture section styling */
+.picture {
+    flex: 1;
+}
+
+/* Animation for the chair image to float up and down */
+.chair-image {
+    max-width: 100%;
+    border: 5px solid #00704a; /* Border with Starbucks green */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Keyframes for the floating animation of the chair image */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Text section styling */
+.text {
+    flex: 1;
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the "Learn More" button with hover effects */
+.learn-more {
+    background-color: #00704a; /* Starbucks green */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #1e3932; /* Darker green for hover */
+}
+
+/* Styling for the footer section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #00704a; /* Starbucks green */
+    color: #ffffff;
+}
+
+/* Styling for social media links in the footer */
+.social-links a {
+    color: #ffb300; /* Gold color for contrast */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
