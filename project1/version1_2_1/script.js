@@ -4,7 +4,7 @@ let maxTime = 1440;  // Total minutes in a day (24 hours * 60 minutes)
 let playbackInterval;  // Variable to store the interval for automatic playback
 let isPlaying = false;  // State to check if the slider is playing
 let speed = 100;  // Playback speed in milliseconds (default is medium speed)
-let speedLevels = { slow: 300, medium: 100, fast: 50 };  // Speed options
+let speedLevels = { slow: 500, medium: 100, fast: 20 };  // Speed options
 let currentSpeedLabel = "medium";  // Default speed label
 
 function preload() {
