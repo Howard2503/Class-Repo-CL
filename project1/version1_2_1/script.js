@@ -13,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(800, 600);
+  let canvas = createCanvas(1000, 800);
   canvas.parent('canvas-container');  // Attach canvas to the container
   noLoop();
 
@@ -36,56 +36,105 @@ function setup() {
 function draw() {
   background(240);
 
-  // Drawing main roads
-  stroke(255, 204, 0);  // Yellow for main road
+  
+  // Main Roads (Yellow Roads)
+  stroke(255, 204, 0);  // Yellow for major roads
   strokeWeight(8);
-  line(50, 500, 750, 500);  // Horizontal yellow road (Zhonghuan Rd)
+  line(100, 700, 900, 700);  // Horizontal main road (Zhonghuan Rd)
   
-  // Drawing a white road
-  stroke(255);
+  // Secondary Roads (White Roads)
+  stroke(255);  // White for secondary roads
   strokeWeight(5);
-  line(200, 100, 600, 550);  // Diagonal white road
+  line(200, 150, 800, 650);  // Diagonal white road
   
-  // Highway interchange
+  // Drawing the Highway Interchange (Zhonghuan and South North Elevated Road)
   stroke(255, 204, 0);
   strokeWeight(10);
   noFill();
-  ellipse(650, 450, 100, 100);  // Roundabout part of the interchange
+  ellipse(800, 650, 120, 120);  // Roundabout part of the interchange
+  ellipse(780, 630, 50, 50);  // Smaller ramp circle
   
-  // Metro line (blue)
-  stroke(0, 0, 255);  // Blue for metro line
+  // Detailed Metro Lines
+  // Metro Line 6 (Blue)
+  stroke(0, 0, 255);  // Blue for Metro Line 6
   strokeWeight(3);
-  line(100, 300, 700, 400);  // Blue line
+  line(50, 400, 900, 550);  // Curved line for Metro Line 6
   
-  // Metro line (pink)
-  stroke(255, 105, 180);  // Pink metro line
-  line(50, 250, 750, 350);  // Pink line
+  // Metro Line 11 (Purple)
+  stroke(138, 43, 226);  // Purple for Metro Line 11
+  line(50, 300, 900, 500);  // Curved purple metro line
   
-  // Drawing water bodies
+  // Metro Line 8 (Light Blue)
+  stroke(135, 206, 250);  // Light blue for Metro Line 8
+  line(50, 350, 900, 600);  // Light blue line for Metro Line 8
+  
+  // Water Bodies
   fill(173, 216, 230);  // Light blue color for water
   noStroke();
   beginShape();
   vertex(100, 100);
-  vertex(150, 150);
-  vertex(100, 200);
-  vertex(50, 150);
+  vertex(200, 150);
+  vertex(150, 250);
+  vertex(50, 200);
   endShape(CLOSE);  // Irregular water body
   
-  // Drawing parks
-  fill(144, 238, 144);  // Light green for parks
-  rect(50, 50, 100, 100);  // Green park near McDonald's
+  // Drawing the small river
+  beginShape();
+  vertex(300, 200);
+  vertex(400, 230);
+  vertex(370, 300);
+  vertex(270, 270);
+  endShape(CLOSE);  // Small water body
   
-  // Landmarks - McDonald's
+  // Parks (Green Areas)
+  fill(144, 238, 144);  // Light green for parks
+  rect(100, 50, 150, 150);  // Park area near McDonald's
+  
+  // Buildings and Landmarks
   fill(255, 0, 0);
-  ellipse(150, 150, 20, 20);  // Circle for McDonald's
+  ellipse(200, 200, 20, 20);  // McDonald's
   fill(0);
   textSize(12);
-  text('McDonald\'s', 160, 150);
-
-  textAlign(CENTER, CENTER);
-  textSize(14);
-  fill(50);
-  text('Real-Time Visualization of Delivery Workers in Shanghai', width / 2, 30);
+  text('McDonald\'s', 230, 200);  // Label for McDonald's
+  
+  // Drawing other landmark buildings
+  fill(100);
+  rect(580, 280, 40, 40); 
+  fill(0);
+  textSize(12);
+  text('Shopping Mall', 600, 300); // A square for the shopping mall
+  
+  fill(100);
+  rect(380, 80, 40, 40);  
+  fill(0);
+  text('School', 400, 100);// Another square for a school
+  
+  // Additional Parks
+  fill(144, 238, 144);  // Light green for more park areas
+  rect(800, 100, 100, 100);  // Park on the east side of the map
+  
+  // Add more details for streets and intersections
+  stroke(255);
+  strokeWeight(3);
+  line(300, 400, 700, 600);  // Another secondary road
+  line(400, 500, 800, 700);  // Additional road
+  
+  // Additional Water Body
+  fill(173, 216, 230);  // Light blue color for water
+  noStroke();
+  beginShape();
+  vertex(700, 100);
+  vertex(800, 150);
+  vertex(750, 200);
+  vertex(650, 170);
+  endShape(CLOSE);  // Small water body on the right
+  
+  // Labels for the metro lines
+  fill(0);
+  textSize(12);
+  text('Metro Line 6', 700, 450);
+  text('Metro Line 11', 700, 500);
+  text('Metro Line 8', 700, 550);
 
   // Draw each worker at their current position based on the selected time
   deliveryData.workers.forEach(worker => {
