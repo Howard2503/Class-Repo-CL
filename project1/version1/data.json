@@ -1,0 +1,29 @@
+{
+    "workers": [
+      {
+        "id": 1,
+        "company": "Meituan",
+        "longitude": 121.4,
+        "latitude": 31.2
+      },
+      {
+        "id": 2,
+        "company": "Ele.me",
+        "longitude": 121.5,
+        "latitude": 31.3
+      },
+      {
+        "id": 3,
+        "company": "Meituan",
+        "longitude": 121.2,
+        "latitude": 31.0
+      },
+      {
+        "id": 4,
+        "company": "Ele.me",
+        "longitude": 121.6,
+        "latitude": 31.1
+      }
+    ]
+  }
+  

@@ -1,0 +1,31 @@
+{
+    "workers": [
+      {
+        "id": 1,
+        "company": "Meituan",
+        "route": [
+          { "longitude": 121.4, "latitude": 31.2, "time": 0 },
+          { "longitude": 121.5, "latitude": 31.25, "time": 300 },
+          { "longitude": 121.55, "latitude": 31.28, "time": 600 },
+          { "longitude": 121.6, "latitude": 31.3, "time": 900 },
+          { "longitude": 121.65, "latitude": 31.32, "time": 1200 }
+        ],
+        "speed": 20,
+        "direction": "N"
+      },
+      {
+        "id": 2,
+        "company": "Ele.me",
+        "route": [
+          { "longitude": 121.5, "latitude": 31.3, "time": 0 },
+          { "longitude": 121.52, "latitude": 31.31, "time": 300 },
+          { "longitude": 121.54, "latitude": 31.32, "time": 600 },
+          { "longitude": 121.57, "latitude": 31.33, "time": 900 },
+          { "longitude": 121.6, "latitude": 31.35, "time": 1200 }
+        ],
+        "speed": 15,
+        "direction": "NE"
+      }
+    ]
+  }
+  

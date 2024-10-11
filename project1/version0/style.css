@@ -1,0 +1,50 @@
+/* Basic styling for the layout */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#map {
+    width: 800px;
+    height: 600px;
+    background-color: #eaeaea;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    background-color: #3498DB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980B9;
+}

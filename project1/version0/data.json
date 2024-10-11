@@ -1,0 +1,7 @@
+[
+    { "id": 1, "x": 200, "y": 150, "status": "active" },
+    { "id": 2, "x": 450, "y": 300, "status": "inactive" },
+    { "id": 3, "x": 600, "y": 400, "status": "active" },
+    { "id": 4, "x": 300, "y": 500, "status": "active" },
+    { "id": 5, "x": 100, "y": 350, "status": "inactive" }
+]

@@ -1,0 +1,12 @@
+[
+    {"city": "New York", "temperature": 30},
+    {"city": "Shanghai", "temperature": 25},
+    {"city": "London", "temperature": 18},
+    {"city": "Tokyo", "temperature": 28},
+    {"city": "Sydney", "temperature": 35},
+    {"city": "Moscow", "temperature": 15},
+    {"city": "Cairo", "temperature": 40},
+    {"city": "Paris", "temperature": 22},
+    {"city": "Berlin", "temperature": 20},
+    {"city": "Dubai", "temperature": 42}
+]

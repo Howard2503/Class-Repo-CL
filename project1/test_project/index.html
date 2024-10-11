@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>City Temperature Visualization</h1>
+    <p>Use the slider to filter cities by temperature.</p>
+
+    <div class="slider-container">
+        <input type="range" id="tempRange" min="0" max="50" step="1" value="25" oninput="updateSlider(this.value)">
+        <label for="tempRange">Temperature Filter: <span id="tempValue">25</span>°C</label>
+    </div>
+
+    <div id="sketch-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

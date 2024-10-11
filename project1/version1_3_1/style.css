@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .legend-item {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .meituan-box {
+    background-color: blue;
+  }
+  
+  .eleme-box {
+    background-color: yellow;
+  }
+  
+  .slider-container {
+    margin: 20px;
+  }
+
+  .tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    display: none; /* Initially hidden */
+    font-size: 12px;
+  }  
+  
+  #time-slider {
+    width: 300px;
+  }
+  
+  #time-display {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  #canvas-container {
+    margin-top: 30px;
+  }
+  

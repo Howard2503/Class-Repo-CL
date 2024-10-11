@@ -1,0 +1,35 @@
+{
+  "workers": [
+    {
+      "id": 1,
+      "company": "Meituan",
+      "route": [
+        { "longitude": 121.4, "latitude": 31.2, "time": 0 },
+        { "longitude": 121.4, "latitude": 31.25, "time": 200 },
+        { "longitude": 121.5, "latitude": 31.25, "time": 400 },
+        { "longitude": 121.5, "latitude": 31.32, "time": 600 },
+        { "longitude": 121.6, "latitude": 31.32, "time": 800 },
+        { "longitude": 121.6, "latitude": 31.37, "time": 1000 },
+        { "longitude": 121.68, "latitude": 31.4, "time": 1200 }
+      ],
+      "speed": 20,
+      "direction": "N"
+    },
+    {
+      "id": 2,
+      "company": "Ele.me",
+      "route": [
+        { "longitude": 121.62, "latitude": 31.2, "time": 0 },
+        { "longitude": 121.62, "latitude": 31.23, "time": 150 },
+        { "longitude": 121.52, "latitude": 31.23, "time": 300 },
+        { "longitude": 121.52, "latitude": 31.29, "time": 450 },
+        { "longitude": 121.42, "latitude": 31.33, "time": 600 },
+        { "longitude": 121.42, "latitude": 31.36, "time": 850 },
+        { "longitude": 121.35, "latitude": 31.36, "time": 1100 },
+        { "longitude": 121.35, "latitude": 31.42, "time": 1350 }
+      ],
+      "speed": 18,
+      "direction": "NE"
+    }
+  ]
+}

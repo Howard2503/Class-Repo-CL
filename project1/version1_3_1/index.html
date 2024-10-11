@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Delivery Workers Visualization in Shanghai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Real-Time Delivery Workers in Shanghai</h1>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-box meituan-box"></div> Meituan Delivery Workers
+    </div>
+    <div class="legend-item">
+      <div class="legend-box eleme-box"></div> Ele.me Delivery Workers
+    </div>
+  </div>
+
+  <!-- Slider for selecting time -->
+  <div class="slider-container">
+    <label for="time-slider">Select Time:</label>
+    <input type="range" id="time-slider" min="0" max="1440" value="0">
+    <span id="time-display">00:00</span>
+  </div>
+
+  <div id="canvas-container">
+    <!-- p5.js canvas will go here -->
+  </div>
+
+  <div id="tooltip" class="tooltip"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
